@@ -1,0 +1,134 @@
+  .thumbnail {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  .video-author {
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+  }
+
+  .video-stats {
+    cursor: text;
+  }
+
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    display: relative;
+  }
+
+  .profile-picture {
+    width: 36px;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 750px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .thumbnail-row {
+    position: relative;
+    margin-bottom: 8px;
+  }
+
+  .video-time {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 4px;
+    position: absolute;
+    bottom: 20px;
+    right: 6px;
+    border-radius: 2px;
+  }
+
+  .video-title-link {
+    text-decoration: none;
+    color: black;
+  }
+
+  .channel-picture:hover .channel-hover{
+    opacity: 1;
+  }
+
+  .channel-hover {
+    background-color: white;
+    width: 200px;
+    position: absolute;
+    z-index: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 7px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 7px rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+  }
+
+  .channel-hover-image {
+    height: 45px;
+    width: 45px;
+    border-radius: 25px;
+    margin: 5px;
+    margin-right: 8px;
+  }
+
+
+  .channel-hover div{
+    display: inline-block;
+  }
+
+  .channel-hover-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+    margin-top: 10px;
+  }
+
+  .channel-hover-stats {
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 8px;
+  }

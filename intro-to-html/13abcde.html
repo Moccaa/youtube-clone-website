@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13 abcde Excersises</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+      }
+
+      .column1 {
+        background-color: lightpink;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .item1 {
+        background-color: black;
+        color: white;
+      }
+
+      .column2 {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+        height: 60px;
+        margin-bottom: 70px;
+      }
+
+      .first-column {
+        background-color: lightpink;
+        width: 100px;
+      }
+
+      .second-column {
+        background-color: lightblue;
+        width: 200px;
+      }
+
+      .row2-item {
+        background-color: black;
+        color: white;
+      }
+
+      .row2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      div {
+        font-family: Roboto, Arial;
+        display: inline-block;
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .email-list {
+        width: 300px;
+        border: none;
+        box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 8px;
+        padding-bottom: 20px;
+        margin-bottom: 70px;
+        display: block;
+      }
+
+      .inbox-div {
+        display: block;
+      }
+
+      .inbox-text {
+        font-size: 10px;
+        color: rgb(97, 97, 97);
+        margin-bottom: 0px;
+      }
+      .email-picture {
+        height: 36px;
+        width: 36px;
+        object-fit: cover;
+        border-radius: 18px;
+        vertical-align: middle;
+        margin-top: 8px;
+      }
+
+      .picture-div {
+        display: inline-block;
+      }
+
+      .email-text-flexbox {
+        display: inline-block;
+        height: 50px;
+        flex: 1;
+        margin-left: 4px;
+      }
+
+      .email-title {
+        font-weight: bold;
+        font-size: 14px;
+      }
+
+      .email-subtitle {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 6px;
+        line-height: 8px;
+      }
+
+      .time {
+        font-size: 11px;
+        display: inline-block;
+        margin-left: -40px;
+        color: rgb(97, 97, 97);
+      }
+
+      .email-text {
+        font-size: 12px;
+        color: rgb(97, 97, 97);
+        margin-top: 6px;
+      }
+
+      .email {
+        vertical-align: top;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .big {
+        width: 420px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(190, 190, 190);
+        padding-top: 7px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .inner {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .profile-image {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-top: 4px;
+      }
+
+      .post-info {
+        vertical-align: top;
+        padding-top: 5px;
+        padding-left: 7px;
+        flex: 1;
+      }
+
+      .name {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .handle {
+        color: rgb(97, 97, 97);
+        font-weight: 100;
+      }
+
+      .caption {
+        margin-bottom: 10px;
+        font-weight: 500;
+      }
+
+      .video-link {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-right: 10px;
+        margin-top: 8px;
+      }
+
+      .column1 {
+        background-color: rgb(190, 190, 190);
+        width: 80px;
+        height: 80px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(190, 190, 190);
+        border-radius: 20px 0 0 20px;
+      }
+
+      .column2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(190, 190, 190);
+        border-radius: 6px;
+        width: 210px;
+        margin-left: -1px;
+        border-radius: 0 20px 20px 0;
+        background-color: transparent;
+      }
+
+      .youtube-link {
+        color: rgb(97, 97, 97);
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+
+      .video-title {
+        font-size: 15px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="column1">
+        <div class="item1">item1</div>
+      </div>
+      <div class="column2"></div>
+    </div>
+
+    <div class="container">
+      <div class="first-column"></div>
+      <div class="second-column">
+        <div>row1</div>
+        <div class="row2">
+          <div class="row2-item">row2</div>
+          <div class="row2-item">row2</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="email-list">
+      <div class="inbox-div">
+        <p class="inbox-text">ALL INBOXES</p>
+      </div>
+      <div></div>
+      <div class="email">
+        <div class="picture-div">
+          <img src="thumbnails/cat.jpg" class="email-picture" />
+        </div>
+        <div class="email-text-flexbox">
+          <p class="email-title">Chewy Promotions</p>
+          <p class="email-subtitle">Biggest sales of the year!</p>
+          <p class="email-text">
+            Hey there! We're writing to tell you about our...
+          </p>
+        </div>
+        <div><p class="time">4&colon;58 PM</p></div>
+      </div>
+
+      <div></div>
+      <div class="email">
+        <div class="picture-div">
+          <img src="thumbnails/dog.jpg" class="email-picture" />
+        </div>
+        <div class="email-text-flexbox">
+          <p class="email-title">Best Buy</p>
+          <p class="email-subtitle">Your Best Buy eReciept</p>
+          <p class="email-text">
+            Thank you for shopping at Best Buy, here is...
+          </p>
+        </div>
+        <div><p class="time">12&colon;32 PM</p></div>
+      </div>
+
+      <div></div>
+      <div class="email">
+        <div class="picture-div">
+          <img src="thumbnails/cat2.jpg" class="email-picture" />
+        </div>
+        <div class="email-text-flexbox">
+          <p class="email-title">Netflix</p>
+          <p class="email-subtitle">Here's what's coming soon to Netflix</p>
+          <p class="email-text">Brand new movies and shows, old favorites...</p>
+        </div>
+        <div><p class="time">9&colon;00 AM</p></div>
+      </div>
+    </div>
+
+    <div class="big">
+      <div class="inner">
+        <div>
+          <img src="thumbnails/cat.jpg" class="profile-image" />
+        </div>
+        <div class="post-info">
+          <p class="name">
+            supersimple.dev <span class="handle">&commat;SuperSimpleDev</span>
+          </p>
+          <p class="caption">
+            What is backend web development? A complete overveiw. New video is
+            up!
+          </p>
+        </div>
+      </div>
+      <div class="video-link">
+        <div class="column1"></div>
+        <div class="column2">
+          <p class="youtube-link">youtube.com</p>
+          <p class="video-title">
+            Backend web development - a complete overveiw &#40;2021&#41;
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

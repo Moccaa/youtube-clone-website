@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>12 g Excercise</title>
+    <style>
+      p,
+      div {
+        font-family: Arial;
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        align-items: center;
+      }
+
+      .profile-picture {
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 25px;
+        margin-right: 15px;
+      }
+
+      .info {
+        width: 200px;
+      }
+
+      .name {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+
+      .bio {
+        color: rgb(96, 96, 96);
+        font-size: 16px;
+        margin-bottom: 3px;
+      }
+
+      .category {
+        color: rgb(96, 96, 96);
+        font-size: 12px;
+      }
+
+      .follow {
+        background-color: rgb(13, 124, 228);
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(120, 82, 178);
+        color: white;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 70px;
+      }
+
+      .home {
+        font-size: 12px;
+        font-weight: bold;
+        margin-top: 14px;
+        margin-bottom: 14px;
+      }
+
+      .download {
+        background-color: rgb(120, 82, 178);
+        color: white;
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .search-bar {
+        flex: 1;
+        max-width: 500px;
+        border: none;
+        border-radius: 25px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-left: 70px;
+        margin-right: 70px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <img class="profile-picture" src="thumbnails/cat.jpg" />
+      <div class="info">
+        <p class="name">Oliver</p>
+        <p class="bio">the cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="follow">Follow</button>
+    </div>
+
+    <div class="row">
+      <img class="profile-picture" src="thumbnails/cat2.jpg" />
+      <div class="info">
+        <p class="name">Mimi</p>
+        <p class="bio">Sleepy cat</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="follow">Follow</button>
+    </div>
+
+    <div class="row">
+      <img class="profile-picture" src="thumbnails/dog.jpg" />
+      <div class="info">
+        <p class="name">Rex</p>
+        <p class="bio">Happy Bulldog</p>
+        <p class="category">Popular</p>
+      </div>
+      <button class="follow">Follow</button>
+    </div>
+
+    <div class="header">
+      <div class="home">Home</div>
+      <input type="text" placeholder="Search" class="search-bar" />
+      <button class="download">Download</button>
+    </div>
+  </body>
+</html>
